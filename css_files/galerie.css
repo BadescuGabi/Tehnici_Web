@@ -1,0 +1,132 @@
+body, html, main {
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    margin-bottom: 500px;
+}
+.backround-poze {
+    margin-top: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    background-color: rgba(196, 187, 187, 1);
+    border-radius: 10vh;
+    opacity: 0.8;
+}
+
+.tot {
+    display: flex;
+    width: 360px;
+    height: 360px;
+    flex-wrap: wrap;
+    margin: 180px auto;
+    background: #ccc;
+    background-image: url("img_anim/1.jpg");
+    background-repeat: no-repeat;
+}
+
+.small-img {
+    position: relative;
+    cursor: pointer;
+    flex-basis: 120px;
+    transition: 3s;
+}
+
+.small-img img {
+    width: 120px;
+    height: 120px;
+    flex-basis: 120px;
+}
+
+h2.bg-text {
+    position: static;
+}
+
+.small-img::after {
+    content: "";
+    width: 120px;
+    height: 36px;
+    bottom: -32px;
+    left: 8.4px;
+    position: absolute;
+    background: #bfbfbf;
+    transform: skewX(26deg);
+}
+
+.small-img::before {
+    content: "";
+    height: 120px;
+    width: 18px;
+    right: -16.8px;
+    top: 18px;
+    position: absolute;
+    background: #bfbfbf;
+    transform: skewy(60deg);
+}
+
+.tot:hover .small-img:nth-child(1) {
+    transform: translate(60px, 370px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(2) {
+    transform: translate(-360px, -150px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(3) {
+    transform: translate(130px, 340px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(4) {
+    transform: translate(448px, -230px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(5) {
+    transform: translate(100px, -300px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(6) {
+    transform: translate(-470px, -100px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(7) {
+    transform: translate(0px, -420px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(8) {
+    transform: translate(-280px, -40px) rotate(360deg);
+}
+
+.tot:hover .small-img:nth-child(9) {
+    transform: translate(200px, -120px) rotate(360deg);
+}
+
+.tot:hover {
+    animation: slide 12s infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+    25% {
+        background: url("img_anim/2.jpg");
+    }
+    50% {
+        background: url("img_anim/3.jpg");
+    }
+    75% {
+        background: url("img_anim/4.jpg");
+    }
+    100% {
+        background: url("img_anim/1.jpg");
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

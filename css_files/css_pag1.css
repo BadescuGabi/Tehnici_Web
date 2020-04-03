@@ -1,0 +1,145 @@
+.lista {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-top: 5px white dotted;
+    border-bottom: 5px white dotted;
+    padding-top: 1%;
+    margin: 0;
+    color: green;
+    font-size: x-large;
+    list-style-type: none;
+    animation: anim 5s;
+    position: relative;
+    animation-delay: 0s;
+    top: 64vh;
+    text-indent: 7vh;
+}
+
+@keyframes anim {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.lista:visited {
+    color: grey;
+}
+ul.lista>li:nth-of-type(1)>a:hover{
+    color: rgb(49, 102, 28)
+}
+ul.lista>li:nth-of-type(2)>a:hover{
+    color: #e67300
+}
+
+ul.lista>li:nth-of-type(3)>a:hover{
+    color:  #800000
+}
+
+ul.lista>li {
+    text-align: start;
+}
+
+ul.lista>li>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+video {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 28vh;
+    right: 20vh;
+    width: 28%;
+    height: 17%;
+}
+
+.sectiuni {
+    padding-top: 70vh;
+    font-size: large;
+    color: gray;
+}
+
+#noi {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    background-color: rgba(196, 187, 187, 1);
+    border-radius: 10vh;
+    opacity: 0.8;
+}
+
+#Importanta_sportului_in_viata_noastra {
+    margin-top: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    background-color: rgba(196, 187, 187, 1);
+    border-radius: 10vh;
+    opacity: 0.8;
+}
+
+svg{
+    position: absolute;
+    top: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    stroke: green;
+    stroke-width: 5px;
+}
+circle{
+    animation: sch 5s infinite;
+    animation-play-state: running;
+}
+
+@keyframes sch{
+    from {background-color: blue;
+    }
+    to {background-color: yellow;}
+}
+#acum {
+    margin-top: 6vh;
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    background-color: rgba(196, 187, 187, 1);
+    border-radius: 10vh;
+    opacity: 0.8;
+    margin-bottom: 1vh;
+}
+
+#acum:hover {
+    color:  #800000
+}
+
+
+#Importanta_sportului_in_viata_noastra:hover {
+   color: #e67300
+}
+
+#noi:hover {
+    color: rgb(49, 102, 28)
+}
+
+section a{
+    position: relative;
+    top: -100px;
+}
+
+#a_special{
+    top: 30vh;
+    left: 9.5vw;
+}
